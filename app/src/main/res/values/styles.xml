@@ -1,0 +1,109 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/CP</item>
+        <item name="colorPrimaryDark">@color/CPD</item>
+        <item name="colorAccent">@color/CA</item>
+        <item name="android:navigationBarColor" tools:ignore="NewApi">@color/CPD</item>
+    </style>
+
+
+    <!-- GLOBAL -->
+    <style name="parentConstraint">
+        <item name="layout_constraintTop_toTopOf">parent</item>
+        <item name="layout_constraintBottom_toBottomOf">parent</item>
+        <item name="layout_constraintLeft_toLeftOf">parent</item>
+        <item name="layout_constraintRight_toRightOf">parent</item>
+    </style>
+
+    <style name="shadow_1">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">5dp</item>
+        <item name="android:background">@drawable/shadow_1</item>
+    </style>
+
+    <style name="shadow_1_vertical">
+        <item name="android:layout_width">5dp</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:background">@drawable/shadow_1_vertical</item>
+    </style>
+
+
+    <!-- Main -->
+    <style name="mBGV">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:background">@color/mBG</item>
+        <item name="layout_constraintWidth_percent">0.5</item>
+        <item name="layout_constraintTop_toTopOf">parent</item>
+        <item name="layout_constraintBottom_toBottomOf">parent</item>
+    </style>
+
+    <style name="mSkull">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:adjustViewBounds">true</item>
+        <item name="android:src">@drawable/skull_1</item>
+        <item name="layout_constraintBottom_toBottomOf">parent</item>
+        <item name="layout_constraintTop_toTopOf">parent</item>
+        <item name="layout_constraintVertical_bias">0.27</item>
+        <item name="layout_constraintHeight_percent">0.5</item>
+        <item name="layout_constraintHorizontal_chainStyle">packed</item>
+        <item name="android:alpha">0</item>
+    </style>
+
+    <style name="mEye">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:background">@drawable/eye_1</item>
+        <item name="android:scaleX">1.1</item>
+        <item name="layout_constraintVertical_bias">0.58</item>
+        <item name="layout_constraintHeight_percent">0.12</item>
+        <item name="android:alpha">0</item>
+    </style>
+
+    <style name="mJaw">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:adjustViewBounds">true</item>
+        <item name="android:src">@drawable/skull_1_jaw</item>
+        <item name="layout_constraintBottom_toBottomOf">parent</item>
+        <item name="layout_constraintTop_toTopOf">parent</item>
+        <item name="layout_constraintVertical_bias">0.78</item>
+        <item name="layout_constraintHeight_percent">0.202</item><!--/= 2.970588235294118-->
+        <item name="layout_constraintHorizontal_chainStyle">packed</item>
+        <item name="android:alpha">0</item>
+    </style>
+
+    <style name="mListsTab">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">60dp</item>
+        <item name="android:background">@drawable/m_lists_tab</item>
+        <item name="android:layout_marginTop">18dp</item>
+        <!--<item name="android:paddingTop">7dp</item>
+        <item name="android:paddingBottom">7dp</item>-->
+        <item name="layout_constraintTop_toBottomOf">@id/mListsTitle</item>
+        <item name="layout_constraintWidth_percent">0.5</item>
+    </style>
+
+    <style name="mListsTabTV">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">19sp</item>
+        <item name="android:textColor">@color/mListsTab2TV</item>
+    </style>
+
+    <style name="mList">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:scrollbars">vertical</item>
+        <item name="android:clipToPadding">false</item>
+        <item name="android:paddingTop">2dp</item>
+        <item name="android:paddingBottom">5dp</item>
+    </style>
+
+
+    <!--<style name="">
+        <item name=""></item>
+    </style>-->
+</resources>

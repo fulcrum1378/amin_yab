@@ -1,0 +1,76 @@
+<resources>
+    <string name="app_name">Amin Yab</string>
+
+    <!-- GLOBAL -->
+    <string name="ok1">OK</string>
+    <string name="yes1">Yes</string>
+    <string name="no1">No</string>
+    <string name="toExit">Double tap to exit&#8230;</string>
+    <string-array name="calendar">
+        <item>Jan</item>
+        <item>Feb</item>
+        <item>Mar</item>
+        <item>Apr</item>
+        <item>May</item>
+        <item>Jun</item>
+        <item>Jul</item>
+        <item>Aug</item>
+        <item>Sep</item>
+        <item>Oct</item>
+        <item>Nov</item>
+        <item>Dec</item>
+    </string-array>
+    <string-array name="calendarFull">
+        <item>January</item>
+        <item>February</item>
+        <item>March</item>
+        <item>April</item>
+        <item>May</item>
+        <item>June</item>
+        <item>July</item>
+        <item>August</item>
+        <item>September</item>
+        <item>October</item>
+        <item>November</item>
+        <item>December</item>
+    </string-array>
+    <string-array name="daysOfWeek">
+        <item>Sunday</item>
+        <item>Monday</item>
+        <item>Tuesday</item>
+        <item>Wednesday</item>
+        <item>Thursday</item>
+        <item>Friday</item>
+        <item>Saturday</item>
+    </string-array>
+    <string-array name="shamsiCalendar">
+        <item>Farvardin</item>
+        <item>Ordibehesht</item>
+        <item>Khordad</item>
+        <item>Tir</item>
+        <item>Mordad</item>
+        <item>Shahrivar</item>
+        <item>Mehr</item>
+        <item>Aban</item>
+        <item>Azar</item>
+        <item>Dey</item>
+        <item>Bahman</item>
+        <item>Esfand</item>
+    </string-array>
+    <string name="noInternet">Please check your internet connection!</string>
+    <string name="metres">metres from here</string>
+
+    <!-- Main -->
+    <string name="mETHint">0000</string><!--TYPE-->
+    <string name="missing">&#160;is missing!</string>
+    <string name="youreMissing">Your location is inaccessible!</string>
+    <string name="lastSyncedAt">Last synchronised at&#160;</string>
+    <string name="neverSynced">Never synchronised yet.</string>
+    <string name="syncNow">Sync Now</string>
+    <string name="mListsTitle">History</string>
+    <string name="wasHereAt">&#160;was here at&#8230;</string>
+    <string name="mListsOptionsReload">Reload</string>
+    <string name="mListsOptionsSync">Sync Now</string>
+    <string name="mListsOptionsSignOut">Sign Out</string>
+    <string name="mListsOptionsSignOutMsg">Are you sure you want to sign out?</string>
+</resources>

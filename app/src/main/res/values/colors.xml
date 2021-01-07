@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="CP">#48C900</color>
+    <color name="CPD">#349900</color>
+    <color name="CA">@color/CP</color>
+
+    <!-- GLOBAL -->
+    <color name="CP2">#222</color>
+    <color name="tp">#00000000</color>
+    <color name="red">#EEFF1212</color>
+    <color name="shadow_1">#55000000</color>
+
+    <!-- Main -->
+    <color name="mBG">@color/CP2</color>
+    <color name="mETBG">@color/tp</color>
+    <color name="mETStroke">@color/CP</color>
+    <color name="mET">@color/CP</color>
+    <color name="mETHint">@color/mET</color><!--#AA48C900-->
+    <color name="mRGD">@color/CP</color>
+    <color name="mCover">#48000000</color>
+    <color name="mLists">@color/CP2</color>
+    <color name="mListsStroke">@color/CP</color>
+    <color name="mListsTitle">@color/CP</color>
+    <color name="mListsTab">@color/tp</color>
+    <color name="mListsTabPressed">#2848C900</color>
+    <color name="mListsTab1TV">#3590E9</color>
+    <color name="mListsTab2TV">@color/CP</color>
+    <color name="mListsTabSelector">@color/CP</color>
+    <color name="mListsSpaceText">#F0F0F0</color>
+    <color name="mListsItemBG">#000</color>
+    <color name="mListsItemTopBorder">@color/tp</color><!--CPD-->
+    <color name="mListsItemHighlight">#4848C900</color>
+    <color name="mListsItemTV">@color/CP</color>
+    <color name="mListsSkullDisabled">#666</color>
+    <color name="mListsFilterMark">@color/CP</color>
+    <color name="mListsFilterBG">@color/tp</color>
+    <color name="mListsFilterBGPressed">#555</color>
+    <color name="mListsFilterTV">@color/CP</color>
+    <color name="mListsFilterDD">@color/CP2</color>
+    <color name="mListsFilterDDPressed">#555</color>
+    <color name="mListsFilterDDTV">@color/CP</color>
+    <color name="mListsFilterDDBorder">#48C900</color>
+    <color name="mListsFilterTopBorder">@color/CP</color>
+    <color name="mListsOptions">@color/CP</color>
+    <color name="mInfoTitle">@color/CPD</color>
+    <color name="mInfoSnippet">@color/CPD</color>
+</resources>

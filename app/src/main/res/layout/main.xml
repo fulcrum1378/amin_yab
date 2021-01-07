@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mBody"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mBG"
+    android:layoutDirection="ltr"
+    tools:context=".Main">
+
+    <View
+        android:id="@+id/mMotor1"
+        android:layout_width="1dp"
+        android:layout_height="1dp"
+        android:visibility="invisible" />
+
+    <fragment
+        android:id="@+id/mMap"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <View
+        android:id="@+id/mRadar"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_margin="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/mCover"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0"
+        android:background="@color/mCover"
+        android:visibility="gone" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/mLists"
+        style="@style/parentConstraint"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/m_lists"
+        android:padding="1dp"
+        android:rotation="-180"
+        android:scaleX="0"
+        android:scaleY="0"
+        android:visibility="gone"
+        app:layout_constraintHeight_percent="0.79"
+        app:layout_constraintWidth_percent="0.79">
+
+        <TextView
+            android:id="@+id/mListsTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:text="@string/mListsTitle"
+            android:textColor="@color/mListsTitle"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/mListsOptions"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginEnd="15dp"
+            android:src="@drawable/options_1"
+            app:layout_constraintBottom_toBottomOf="@id/mListsTitle"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/mListsTitle" />
+
+        <View
+            android:id="@+id/mListsTab1"
+            style="@style/mListsTab"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/mListsTab1TV"
+            style="@style/mListsTabTV"
+            android:textColor="@color/mListsTab1TV"
+            app:layout_constraintBottom_toBottomOf="@id/mListsTab1"
+            app:layout_constraintLeft_toLeftOf="@id/mListsTab1"
+            app:layout_constraintRight_toRightOf="@id/mListsTab1"
+            app:layout_constraintTop_toTopOf="@id/mListsTab1" />
+
+        <View
+            android:id="@+id/mListsTab2"
+            style="@style/mListsTab"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/mListsTab2TV"
+            style="@style/mListsTabTV"
+            app:layout_constraintBottom_toBottomOf="@id/mListsTab2"
+            app:layout_constraintLeft_toLeftOf="@id/mListsTab2"
+            app:layout_constraintRight_toRightOf="@id/mListsTab2"
+            app:layout_constraintTop_toTopOf="@id/mListsTab2" />
+
+        <View
+            android:id="@+id/mListsSwitch"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:background="@color/mListsTabSelector"
+            app:layout_constraintBottom_toBottomOf="@id/mListsTab1"
+            app:layout_constraintWidth_percent="0.5" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@id/mListsFilter"
+            app:layout_constraintTop_toBottomOf="@id/mListsTab1">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/mList1"
+                style="@style/mList" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/mList2"
+                style="@style/mList" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <Spinner
+            android:id="@+id/mListsFilter"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@drawable/m_lists_filter"
+            android:paddingStart="28dp"
+            android:paddingTop="14dp"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+        <ImageView
+            android:id="@+id/mListsFilterMark"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_marginEnd="22dp"
+            android:rotation="90"
+            android:src="@drawable/play_3_ntf"
+            app:layout_constraintBottom_toBottomOf="@id/mListsFilter"
+            app:layout_constraintEnd_toEndOf="@id/mListsFilter"
+            app:layout_constraintTop_toTopOf="@id/mListsFilter" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/mListsFilterTopBorder"
+            app:layout_constraintTop_toTopOf="@id/mListsFilter" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <View
+        android:id="@+id/mBGVLeft"
+        style="@style/mBGV"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <View
+        android:id="@+id/mBGVRight"
+        style="@style/mBGV"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <View
+        android:id="@+id/mLeftEye"
+        style="@style/mEye"
+        android:translationX="-18dp"
+        app:layout_constraintBottom_toBottomOf="@id/mLeftSkull"
+        app:layout_constraintHorizontal_bias="0.55"
+        app:layout_constraintLeft_toLeftOf="@id/mLeftJaw"
+        app:layout_constraintRight_toRightOf="@id/mLeftJaw"
+        app:layout_constraintTop_toTopOf="@id/mLeftSkull" />
+
+    <View
+        android:id="@+id/mRightEye"
+        style="@style/mEye"
+        android:translationX="18dp"
+        app:layout_constraintBottom_toBottomOf="@id/mRightSkull"
+        app:layout_constraintHorizontal_bias="0.45"
+        app:layout_constraintLeft_toLeftOf="@id/mRightJaw"
+        app:layout_constraintRight_toRightOf="@id/mRightJaw"
+        app:layout_constraintTop_toTopOf="@id/mRightSkull" />
+
+    <ImageView
+        android:id="@+id/mLeftSkull"
+        style="@style/mSkull"
+        android:rotationY="180"
+        android:translationX="-0.125dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/mRightSkull" />
+
+    <ImageView
+        android:id="@+id/mRightSkull"
+        style="@style/mSkull"
+        app:layout_constraintLeft_toRightOf="@id/mLeftSkull"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <EditText
+        android:id="@+id/mET"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:alpha="0"
+        android:background="@drawable/m_edittext"
+        android:fontFamily="monospace"
+        android:hint="@string/mETHint"
+        android:inputType="number"
+        android:maxLength="4"
+        android:paddingLeft="20dp"
+        android:paddingTop="8dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="8dp"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@color/mET"
+        android:textColorHint="@color/mETHint"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="@id/mLeftJaw"
+        app:layout_constraintRight_toRightOf="@id/mRightJaw"
+        app:layout_constraintTop_toBottomOf="@id/mLeftSkull" />
+
+    <ImageView
+        android:id="@+id/mLeftJaw"
+        style="@style/mJaw"
+        android:rotationY="180"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/mRightJaw" />
+
+    <ImageView
+        android:id="@+id/mRightJaw"
+        style="@style/mJaw"
+        app:layout_constraintLeft_toRightOf="@id/mLeftJaw"
+        app:layout_constraintRight_toRightOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
